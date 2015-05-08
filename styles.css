@@ -75,8 +75,9 @@ nav ul {
 }
 
 nav li {
-	text-transform: uppercase;
-	padding: 1em;	
+	text-transform: lowercase;
+	padding: 1em;
+	color: #AFAFAF;	
 }
 
 nav li a {
@@ -104,7 +105,7 @@ main {
 
 main h2 {
 	text-transform: lowercase;
-	padding: 0.5em;
+	padding: 2em 1em;
 	color: #AFAFAF;
 	font-family: georgia, serif;
 	font-style: italic;
@@ -132,4 +133,8 @@ main h2 {
 
 .post-card p {
 	font-family: georgia, serif;	
+}
+
+img {
+	max-width: 100%;
 }
