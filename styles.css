@@ -1,4 +1,4 @@
-body, html {
+body, html, section, figure {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -30,7 +30,6 @@ ul {
  */
 header {
 	width: 100%;
-	border-bottom: 1px solid #FEEA3A;
 }
 
 .header__logo {
@@ -97,7 +96,7 @@ nav li a:hover {
  *
  */
 
-main {
+.inner_main {
   width: 100%;
   max-width: 50em;
   margin: 0 auto;
@@ -106,15 +105,29 @@ main {
 main h2 {
 	text-transform: lowercase;
 	padding: 2em 1em;
-	color: #AFAFAF;
 	font-family: georgia, serif;
 	font-style: italic;
 	letter-spacing: 0.2em;
 }
 
+.writing {
+	background-color: #DDD;
+}
+
+.writing h2 {
+	color: #5E5E5E;
+}
+
 .post-card {
 	padding: 1em;
+	margin: 1em;
 	line-height: 1.5;
+	background-color: #FFF;
+}
+
+div.post-card:first-child { /*not working*/
+	color: red;
+	margin-top: 0;
 }
 
 .post-card h3 {
@@ -125,16 +138,30 @@ main h2 {
 .post-card h3 a {
 	color: #5E5E5E;
 	text-decoration: none;
+	border-bottom: 2px solid #00BEA4;	
 }
 
 .post-card h3 a:hover {
-	border-bottom: 2px solid #00BEA4;
+	color: #00BEA4;
 }
 
 .post-card p {
 	font-family: georgia, serif;	
 }
 
-img {
+.photos {
+	background-color: #2F2F2F;
+}
+
+.photos h2 {
+	color: #DDD;
+}
+
+.photo-card {
+	padding: 0 1em 1em;
+}
+
+.photo-card img {
 	max-width: 100%;
+	vertical-align: middle;
 }
