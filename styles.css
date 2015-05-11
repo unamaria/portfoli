@@ -131,8 +131,7 @@ main h2 {
 	background-color: #FFF;
 }
 
-div.post-card:first-child { /*not working*/
-	color: red;
+.post-card:nth-of-type(1) {
 	margin-top: 0;
 }
 
