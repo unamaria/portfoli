@@ -5,12 +5,6 @@ body, html {
   height: 100%;
 }
 
-body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 100%;
-  color: #5E5E5E;
-}
-
 h1, h2, h3, h4, h5 {
   margin: 0; 
   font-weight: normal;
@@ -21,6 +15,19 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+figure, picture {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  color: #5E5E5E;
 }
 
 /*
@@ -83,7 +90,6 @@ nav li {
 nav li a {
 	text-decoration: none;
 	color: #5E5E5E;
-	padding: 0.2em 0.5em;
 }
 
 nav li a:hover {
@@ -115,26 +121,32 @@ main h2 {
 .post-card {
 	padding: 1em;
 	line-height: 1.5;
+	background-color: #EFEFEF;
+	margin: 0.5em 0em;
 }
 
 .post-card h3 {
 	font-weight: bold;
-	font-size: 1.2em;
+	font-size: 1.5em;
 }
 
 .post-card h3 a {
 	color: #5E5E5E;
 	text-decoration: none;
+	border-bottom: 2px solid #00BEA4;
 }
 
 .post-card h3 a:hover {
-	border-bottom: 2px solid #00BEA4;
+	color: #00BEA4;
 }
 
 .post-card p {
 	font-family: georgia, serif;	
 }
 
-img {
+.photo-card img {
 	max-width: 100%;
+	vertical-align: middle;
+	padding: 1em 0;
+	background-color: #2f2f2f;
 }
