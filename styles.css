@@ -117,6 +117,14 @@ main h2 {
 	width: 100%;
 }
 
+.inner_main {
+	display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: center;
+}
+
 .writing {
 	background-color: #DDD;
 }
@@ -124,14 +132,6 @@ main h2 {
 .writing h2 {
 	color: #5E5E5E;
 	margin-bottom: -1em;
-}
-
-.writing .inner_main {
-	display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    justify-content: center;
 }
 
 .post-card {
@@ -142,14 +142,18 @@ main h2 {
 }
 
 @media (min-width: 700px) {
-	.post-card {
+	.post-card, .photo-card {
 		width: 40%;
 	}
 }
 
 @media (min-width: 1200px) {
-	.post-card {
+	.post-card, .photo-card {
 		width: 25%;
+	}
+
+	.writing, .photos {
+		padding-bottom: 4em;
 	}
 }
 
