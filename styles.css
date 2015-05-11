@@ -104,7 +104,7 @@ nav li a:hover {
 
 .inner_main {
   width: 100%;
-  max-width: 50em;
+  max-width: 80em;
   margin: 0 auto;
 }
 
@@ -114,6 +114,7 @@ main h2 {
 	font-family: georgia, serif;
 	font-style: italic;
 	letter-spacing: 0.2em;
+	width: 100%;
 }
 
 .writing {
@@ -122,6 +123,15 @@ main h2 {
 
 .writing h2 {
 	color: #5E5E5E;
+	margin-bottom: -1em;
+}
+
+.writing .inner_main {
+	display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: center;
 }
 
 .post-card {
@@ -131,8 +141,16 @@ main h2 {
 	background-color: #FFF;
 }
 
-.post-card:nth-of-type(1) {
-	margin-top: 0;
+@media (min-width: 700px) {
+	.post-card {
+		width: 40%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.post-card {
+		width: 25%;
+	}
 }
 
 .post-card h3 {
