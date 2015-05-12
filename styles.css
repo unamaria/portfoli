@@ -101,7 +101,7 @@ nav li a:hover {
  * Main
  *
  */
-
+/* Common */
 .inner_main {
   width: 100%;
   max-width: 80em;
@@ -125,6 +125,38 @@ main h2 {
     justify-content: center;
 }
 
+@media (min-width: 700px) and (max-width: 1199px) {
+	.post-card, .photo-card {
+		width: 40%;
+	}
+
+	.archive {
+		padding: 1em;
+	}
+}
+
+@media (min-width: 1200px) {
+	.post-card, .photo-card {
+		width: 25%;
+	}
+
+	.writing, .photos {
+		padding-bottom: 4em;
+	}
+}
+
+.post-card, .photo-card {
+	flex-grow: 1;
+}
+
+.archive {
+	margin: 1em;
+	width: 40%;
+	flex-grow: 1;
+	align-self: center;
+}
+
+/* Writing */
 .writing {
 	background-color: #DDD;
 }
@@ -139,22 +171,6 @@ main h2 {
 	margin: 1em;
 	line-height: 1.5;
 	background-color: #FFF;
-}
-
-@media (min-width: 700px) {
-	.post-card, .photo-card {
-		width: 40%;
-	}
-}
-
-@media (min-width: 1200px) {
-	.post-card, .photo-card {
-		width: 25%;
-	}
-
-	.writing, .photos {
-		padding-bottom: 4em;
-	}
 }
 
 .post-card h3 {
@@ -176,6 +192,7 @@ main h2 {
 	font-family: georgia, serif;	
 }
 
+/* Photos */
 .photos {
 	background-color: #2F2F2F;
 }
