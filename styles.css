@@ -129,10 +129,6 @@ main h2 {
 	.post-card, .photo-card {
 		width: 40%;
 	}
-
-	.archive {
-		padding: 1em;
-	}
 }
 
 @media (min-width: 1200px) {
@@ -156,6 +152,14 @@ main h2 {
 	align-self: center;
 }
 
+.archive a {
+	text-decoration: none;
+}
+
+.archive a:hover {
+	text-decoration: underline;
+}
+
 /* Writing */
 .writing {
 	background-color: #DDD;
@@ -166,6 +170,15 @@ main h2 {
 	margin-bottom: -1em;
 }
 
+.writing .archive a {
+	color: #5E5E5E;
+}
+
+@media (min-width: 700px) and (max-width: 1199px) {
+	.writing .archive {
+		padding: 1em;
+	}
+}
 .post-card {
 	padding: 1em;
 	margin: 1em;
@@ -197,7 +210,7 @@ main h2 {
 	background-color: #2F2F2F;
 }
 
-.photos h2 {
+.photos h2, .photos .archive a {
 	color: #DDD;
 }
 
